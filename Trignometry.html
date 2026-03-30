@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trigonometry Learning Hub</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 45px;
+    color: gold;
+}
+
+section {
+    padding: 30px;
+}
+
+.box {
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: gold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: orange;
+}
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+</style>
+
+<script>
+function calculateSin() {
+    let angle = document.getElementById("angle").value;
+    let result = Math.sin(angle * Math.PI / 180);
+    document.getElementById("result").innerHTML = 
+        "Sin(" + angle + "°) = " + result.toFixed(4);
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Trigonometry Mastery</h1>
+    <p>Understanding Angles & Ratios</p>
+</header>
+
+<section>
+    <h2>📐 What is Trigonometry?</h2>
+    <div class="box">
+        Trigonometry is the study of relationships between angles and sides of triangles.
+    </div>
+</section>
+
+<section>
+    <h2>📊 Basic Trigonometric Ratios</h2>
+    <div class="box">
+        sin θ = Opposite / Hypotenuse <br>
+        cos θ = Adjacent / Hypotenuse <br>
+        tan θ = Opposite / Adjacent
+    </div>
+</section>
+
+<section>
+    <h2>🧮 Important Formulas</h2>
+    <div class="box">
+        sin²θ + cos²θ = 1 <br>
+        1 + tan²θ = sec²θ <br>
+        1 + cot²θ = cosec²θ
+    </div>
+</section>
+
+<section>
+    <h2>🧠 Trigonometry Mind Map</h2>
+    <div class="box">
+        <ul>
+            <li>Angles
+                <ul>
+                    <li>Degree</li>
+                    <li>Radian</li>
+                </ul>
+            </li>
+            <li>Ratios
+                <ul>
+                    <li>sin</li>
+                    <li>cos</li>
+                    <li>tan</li>
+                </ul>
+            </li>
+            <li>Identities</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>🧑‍💻 Interactive Sin Calculator</h2>
+    <div class="box">
+        Enter Angle: 
+        <input type="number" id="angle" placeholder="Enter angle in degrees">
+        <button onclick="calculateSin()">Calculate</button>
+        <p id="result"></p>
+    </div>
+</section>
+
+<section>
+    <h2>📈 Input → Process → Output Diagram</h2>
+    <div style="display:flex; justify-content:space-around;">
+        <div class="box">Input: Angle</div>
+        <div class="box">Process: Apply Formula</div>
+        <div class="box">Output: Ratio Value</div>
+    </div>
+</section>
+
+<footer style="text-align:center; padding:20px;">
+    © 2026 Anshu | Built with Mathematics
+</footer>
+
+</body>
+</html>
+
+
